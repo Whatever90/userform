@@ -1,0 +1,46 @@
+#table{
+	    display: inline-flex;
+    margin: 10 5 10 5;
+    padding: 0 15 0 30px;
+    font-size: small;
+        
+        float: right;
+}
+.main{
+	padding: 0 20 0 20;
+	margin-right: 18px;
+}
+#mid{
+	border-bottom: solid 1px;
+}
+#user_form{
+	width: 278px;
+	display: flow-root;
+}
+.formstuff{
+	float: right;
+	margin: 2 0 2 0;
+}
+
+#inputsubmit{
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
+#saysmth{
+	float: left;
+}
+.newmain{
+	text-align: center;
+	margin: 50px 50px 50px 50px;
+	padding: 5 0 5 0;
+	border: solid 1px;
+	width: 400px;
+	height: 100px;
+	font-size: large;
+vertical-align:middle;
+}
+#textarea{
+	top: 300px;
+
+
+}

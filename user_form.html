@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		 <title>User form</title>
+		 <link rel="stylesheet" type="text/css" href="user_form.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <script type="text/javascript">
+		 	function attachhandler(){
+		 		$('.newmain').click(function (){
+					var g = $('#contacttext').val();
+					$(this).text(g);
+					//alert(g);
+					
+				});
+		 	}
+		 	$(document).ready(function(){
+		 		
+				$('#inputsubmit').click(function (){
+					
+					var holdyDiv = $('<div class="newmain"></div>').append($('#inputname').val()+' '+$('#inputlname').val() + "</br>Click to see more!");
+					
+					$('#fname').append(holdyDiv);
+					attachhandler();
+				});	
+				
+
+		 	});
+		 </script>
+	</head>
+	<body>
+		<div id="table">
+			 <div id="fname" class="main">
+				
+			 </div>
+			
+		</div>
+			 
+		
+		
+		 <div id="user_form">
+		 	
+			 <p class="formstuff">First Name:<input type="text" name="inputname" id="inputname" value="First Name"></p>
+			 <p class="formstuff">Last Name:<input type="text" name="inputlname" id="inputlname" value="Last Name"></p>
+			
+			<p id="saysmth">Say something</p>
+			<p><textarea rows="4" cols="36" id="contacttext" value="say">Your biography</textarea>
+			<button type="submit" id="inputsubmit" class="formstuff" value="submit" height="200">Add User</button>
+		 </div>
+
+	 </body>
+</html>
